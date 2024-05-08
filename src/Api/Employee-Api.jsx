@@ -14,3 +14,13 @@ export async function postEmployeeData(employee) {
     }
     
 }
+
+export async function employeeList(){
+    try {
+        const data = EmployeeApi.get("/employeeList");
+        console.log(data,"data");
+        return data
+    } catch (error) {
+        console.log(error);
+    }
+}
