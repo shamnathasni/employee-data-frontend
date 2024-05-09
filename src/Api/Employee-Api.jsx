@@ -24,3 +24,12 @@ export async function employeeList(){
         console.log(error);
     }
 }
+
+export async function searchData(search) {
+    try {
+        const data = EmployeeApi.get(`/serachdata?searchData=${search}`)
+        return data
+    } catch (error) {
+        console.log(error);        
+    }
+}
