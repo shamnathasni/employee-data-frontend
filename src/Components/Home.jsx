@@ -11,10 +11,10 @@ function Home() {
           <p className='font-extralight m-5 '>The Employee Management App is a comprehensive solution for organizations to efficiently manage their employee data. This app simplifies tasks like adding and editing employee information, tracking attendance, managing leave requests, and monitoring performance. It provides a user-friendly interface for accessing employee directories, generating reports, and setting performance goals.</p>
           <div className='flex flex-row  p-5 gap-4 justify-center'>
             <Link to="/add-employee-data">
-              <button className='bg-green-800 text-white my-3 h-10 w-60 rounded-sm px-5 '>Add Employee</button>
+              <button className='bg-green-800 text-white my-3 h-10 w-60 rounded-sm px-5 hover:scale-105 ease-in-out duration-300'>Add Employee</button>
             </Link>
             <Link to="/list-employee">
-              <button className='bg-blue-800 text-white my-3 h-10 w-60  rounded-sm px-5'>List Employee</button>
+              <button className='bg-blue-800 text-white my-3 h-10 w-60  rounded-sm px-5 hover:scale-105 ease-in-out duration-300'>List Employee</button>
             </Link>
           </div>
         </div>

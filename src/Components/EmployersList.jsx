@@ -48,7 +48,7 @@ function EmployersList() {
     return (
         <>
         <NavbarSimple/>
-            <div className='text-center font-extrabold py-3 text-3xl'>
+            <div className='text-center font-serif font-bold py-3 text-3xl'>
                 <h1>Employee List</h1>
             </div>
            
@@ -68,7 +68,7 @@ function EmployersList() {
                  <div className='flex justify-between items-center my-5'>
                  <input type='text' onChange={(e)=>{setSearch(e.target.value)}} placeholder=' search employee with name..' className='placeholder:italic  border h-10 w-60 rounded-sm m-2 bg-slate-100'/>
                     <CSVLink data={csvData} headers={csvHeaders} filename={"employees.csv"}>
-                        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+                        <button className='hover:scale-105 ease-in-out duration-300 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
                             Download CSV
                         </button>
                     </CSVLink>

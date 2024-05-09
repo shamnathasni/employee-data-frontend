@@ -17,8 +17,8 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link to={"/add-employee-data"} className="flex items-center hover:text-blue-500 transition-colors">
-          Add
+        <Link to={"/add-employee-data"} className="flex items-center hover:text-blue-500 transition-colors font-normal">
+          ADD
         </Link>
       </Typography>
       <Typography
@@ -27,8 +27,8 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link to={"/list-employee"} className="flex items-center hover:text-blue-500 transition-colors">
-          employers
+        <Link to={"/list-employee"} className="flex items-center hover:text-blue-500 transition-colors font-normal">
+          EMPLOYERS
         </Link>
       </Typography>
     </ul>
@@ -56,7 +56,7 @@ export function NavbarSimple() {
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
+          className="mr-4 cursor-pointer py-1.5 font-bold"
         >
           <Link to={"/"}>EMPLOYEEAPP</Link>
         </Typography>

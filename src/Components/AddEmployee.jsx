@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -27,14 +26,6 @@ const {
   handleSubmit,
   formState: { errors },
 } = useForm({ resolver: zodResolver(schema) });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setEmployee((prevEmployee) => ({
-  //     ...prevEmployee,
-  //     [name]: value,
-  //   }));
-  // };
 
   const submitData = async(formData) => {
     try {  
