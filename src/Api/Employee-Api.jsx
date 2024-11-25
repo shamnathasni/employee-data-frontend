@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const EmployeeApi = axios.create({
-    baseURL:"http://localhost:3000"
+    baseURL:"https://employee-data-backend-31m1.onrender.com"
 })
 
 export async function postEmployeeData(employee) {
